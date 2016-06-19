@@ -1,0 +1,107 @@
+# Logfile created on 2016-06-18 15:56:30 +0100 by logger.rb/31641
+E, [2016-06-18T15:56:30.161272 #42660] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    /usr/local/rvm/rubies/ruby-1.9.3-p194/bin/ruby -r ./siteconf20160618-42660-hm8175.rb extconf.rb 
+checking for main() in -lstdc++... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/local/rvm/rubies/ruby-1.9.3-p194/bin/ruby
+	--with-tag-dir
+	--without-tag-dir
+	--with-tag-include
+	--without-tag-include=${tag-dir}/include
+	--with-tag-lib
+	--without-tag-lib=${tag-dir}/lib
+	--with-stdc++lib
+	--without-stdc++lib
+/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:381:in `try_do': The compiler failed to generate an executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:461:in `try_link0'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:476:in `try_link'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:619:in `try_func'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:845:in `block in have_library'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:790:in `block in checking_for'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:284:in `block (2 levels) in postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:254:in `open'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:284:in `block in postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:254:in `open'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:280:in `postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:789:in `checking_for'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:840:in `have_library'
+	from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/taglib-ruby-0.7.1/ext/extconf_common.rb:28:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from extconf.rb:2:in `<main>'
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /usr/local/rvm/gems/ruby-1.9.3-p194/gems/taglib-ruby-0.7.1 for inspection.
+Results logged to /usr/local/rvm/gems/ruby-1.9.3-p194/extensions/x86_64-darwin-11/1.9.1/taglib-ruby-0.7.1/gem_make.out
+
+/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:89:in `run'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/ext_conf_builder.rb:36:in `block in build'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:320:in `open'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:161:in `block (2 levels) in build_extension'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:160:in `chdir'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:160:in `block in build_extension'  \n<internal:prelude>:10:in `synchronize'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:159:in `build_extension'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:198:in `block in build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:195:in `each'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:195:in `build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/installer.rb:702:in `build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/installer.rb:250:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:95:in `block in install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/forwardable.rb:201:in `each'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/forwardable.rb:201:in `each'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/bundle:19:in `load'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/bundle:19:in `<main>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2016-06-18T16:01:40.344936 #51411] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    /usr/local/rvm/rubies/ruby-1.9.3-p194/bin/ruby -r ./siteconf20160618-51411-og6id0.rb extconf.rb 
+checking for main() in -lstdc++... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/local/rvm/rubies/ruby-1.9.3-p194/bin/ruby
+	--with-tag-dir
+	--without-tag-dir
+	--with-tag-include
+	--without-tag-include=${tag-dir}/include
+	--with-tag-lib
+	--without-tag-lib=${tag-dir}/lib
+	--with-stdc++lib
+	--without-stdc++lib
+/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:381:in `try_do': The compiler failed to generate an executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:461:in `try_link0'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:476:in `try_link'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:619:in `try_func'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:845:in `block in have_library'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:790:in `block in checking_for'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:284:in `block (2 levels) in postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:254:in `open'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:284:in `block in postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:254:in `open'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:280:in `postpone'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:789:in `checking_for'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/mkmf.rb:840:in `have_library'
+	from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/taglib-ruby-0.7.1/ext/extconf_common.rb:28:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from extconf.rb:2:in `<main>'
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /usr/local/rvm/gems/ruby-1.9.3-p194/gems/taglib-ruby-0.7.1 for inspection.
+Results logged to /usr/local/rvm/gems/ruby-1.9.3-p194/extensions/x86_64-darwin-11/1.9.1/taglib-ruby-0.7.1/gem_make.out
+
+/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:89:in `run'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/ext_conf_builder.rb:36:in `block in build'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:320:in `open'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:161:in `block (2 levels) in build_extension'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:160:in `chdir'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:160:in `block in build_extension'  \n<internal:prelude>:10:in `synchronize'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:159:in `build_extension'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:198:in `block in build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:195:in `each'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/ext/builder.rb:195:in `build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/installer.rb:702:in `build_extensions'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/installer.rb:250:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:95:in `block in install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/forwardable.rb:201:in `each'  \n/usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/forwardable.rb:201:in `each'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/bundle:19:in `load'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/bundle:19:in `<main>'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'  \n/usr/local/rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+I, [2016-06-18T16:12:33.497915 #51632]  INFO -- : 0:  id3tag (0.8.0) from /usr/local/rvm/gems/ruby-1.9.3-p194/specifications/id3tag-0.8.0.gemspec
+I, [2016-06-18T16:12:33.498619 #51632]  INFO -- : 0:  bundler (1.5.1) from /usr/local/rvm/gems/ruby-1.9.3-p194/specifications/bundler-1.5.1.gemspec
